@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Required Bootstrap files -->
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="main_file/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- Railway font-->
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet"> <!-- Goudy Bookletter 1911 -->
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css">
+    <link rel="stylesheet" href="lib/css/leaflet-sidebar.css" />
+
+    <!-- JavaScript Files -->
+    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+	<title>Utility Management</title>
+
+</head>
+<body>
+
+<!-- ========================
+            NAVBAR
+========================= -->    
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Utility management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html#login">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign Up</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+<!-- ========================
+         MAP + SIDEBAR
+========================= -->
+<section class="container-fluid main-1"></section>
+       <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+                <li><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="#settings" role="tab"><i class="fa fa-cog"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#settings" role="tab"><i class="fa fa-cog"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+
+            <ul role="tablist">
+                <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h1 class="sidebar-header text-center">
+                    Function
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+
+                <p>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt <a href="#">contactkld</a> Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+                <h4 class="text-center">Add Your Shapefile Here</h4>
+                <input  class = 'side-input' type="file" name="text" placeholder="Input Your data" maxlength="50" /><hr class="light">
+
+                <h4 class="text-center">Layer Control</h4>
+                <p><i class="far fa-square"></i> Water Pipeline</p>
+                <p><i class="far fa-square"></i> Transmission Line</p>
+                <p><i class="far fa-square"></i> Road Network</p>
+                <p><i class="far fa-square"></i> Drainage Network</p>
+
+                <p><button class="side-button1">View all layers</button></p><hr class="light">
+
+                <h4 class="text-center">Analysis Operations</h4>
+                <p><button class="side-button">Buffer</button></p>
+                <p><button class="side-button">Clip</button></p>
+                <p><button class="side-button">Route Finder</button></p><hr class="light">
+
+                <p><button class="side-button3">Generate Report</button></p>
+
+
+                
+            </div>
+
+            <div class="sidebar-pane" id="profile">
+                <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fas fa-caret-left"></i></span></h1>
+                    <p class="text-center"><img src="img/profile/1.jpg" class="profile-img" alt="user-profile"></p>
+                    <h5>User Name : <span>JOHN DOE</span></h5>
+                    <h5>Email  : <span>john343@gamil.com</p></span>
+                    <h5>Community : <span>Water Pipe Management</span></h5>
+                    <button class="side-button1">More Info</button>
+
+            </div>
+
+            <div class="sidebar-pane" id="messages">
+                <h1 class="sidebar-header">Messages<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+
+            <div class="sidebar-pane" id="settings">
+                <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" style="width: 100%; height: 600px;" class="sidebar-map"></div>
+
+    <script src="lib/js/leaflet-sidebar.js"></script>
+    <script type="text/javascript" src="main_file/leaflet_main.js"></script>
+
+
+
+<!-- ========================
+            FOOTER
+========================= -->
+                <footer class="text-white">
+                  <div class="container-fluid">
+                    <div class="row text-center">
+                      <div class="col-md-4 m-footer wow fadeInUp">
+                        <hr class="light">
+                        <h5>Utility Management</h5>
+                        <hr class="light">
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="about.html">About Us</a></p>
+                        <p><a href="login.html">Sign Up</a></p>
+                      </div>
+                      <div class="col-md-4 wow fadeInUp">
+                        <hr class="light">
+                        <h5>View Layer Maps</h5>
+                        <hr class="light">
+                        <p>Water Pipe Line</p>
+                        <p>Road Network</p>
+                        <p>Drainage Network</p>
+                        <p>Others</p>
+                      </div>
+                      <div class="col-md-4 wow fadeInUp">
+                        <hr class="light">
+                        <h5>Contact Us</h5>
+                        <hr class="light">
+                        <p>(+977) 7777-777-777</p>
+                        <p>Contact.utilitymanagment.com</p>
+                        <p>lamachour 16 pokhara, 37400</p>
+                      </div>
+                      <div class="col-12 wow fadeInUp">
+                        <hr class="light-1">
+                        <h5> All rights are reserved by &copy; Utility Management</h5>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+
+
+
+<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+</body>
+</html>
